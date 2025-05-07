@@ -41,16 +41,40 @@
         border-radius: 50%;
         width: 200px; /* Ширина изображения */
         height: 200px; /* Высота изображения */
-        box-shadow: 0 0 60px rgba(55, 255, 0, 0.5); /* Тень для изображения */
-        padding: 2px; /* Отступы внутри изображения */
+        box-shadow: 0 0 50px 30px #2aff05; /* Тень для изображения */
+        padding: 1.5px; /* Отступы внутри изображения */
         margin-bottom: 1.2em;
         margin-top: 1, 2em;
+      }
+      /* Устанавливаем видео как фон */
+      .video-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+
+      /* Контент поверх видео */
+      .content {
+        position: relative;
+        z-index: 1;
+        color: white;
+        text-align: center;
+        padding: 50px;
       }
     </style>
 
     <title>Aknur</title>
   </head>
   <body>
+    <!-- Видео фон -->
+    <video autoplay muted loop class="video-background">
+      <source src="IMG_0842.MP4" type="video/mp4" />
+      Ваш браузер не поддерживает видео.
+    </video>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand p-0" href="Aknur.html">
@@ -119,7 +143,7 @@
         <div class="col-8 mx-auto">
           <h1 class="lumios-marker">Сайт про самую лучшую девушку</h1>
           <h2 class="lumios-marker">По имени Акнур</h2>
-          <a href="#">
+          <a href="Записка.html">
             <img
               src="Aknur.jpg"
               alt="😍"

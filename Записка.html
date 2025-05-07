@@ -12,9 +12,99 @@
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
       crossorigin="anonymous"
     ></script>
-    <style></style>
     <link rel="shortcut icon" href="Logo.png" type="image/x-icon" />
-    <title>Главная</title>
+    <style>
+      @font-face {
+        font-family: "Lumios Marker";
+        src: url("Fonts/Lumios Marker.otf") format("opentype");
+      }
+
+      .lumios-marker {
+        font-family: "Lumios Marker", sans-serif;
+      }
+
+      body {
+        background-color: #ffccf2; /* Розовый фон */
+      }
+
+      h1 {
+        font-size: 3.5rem;
+        color: #3203ed;
+        text-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
+      }
+
+      h2 {
+        font-size: 3rem;
+        color: #01cbd9;
+        text-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+      }
+
+      p {
+        font-size: 2rem;
+        color: #000000;
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+      }
+
+      .image-container {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4em; /* Отступ ниже навигации */
+        position: relative;
+        text-align: center;
+      }
+
+      .image-container img {
+        width: 66.6vw; /* 2/3 ширины экрана */
+        height: auto; /* Сохраняем пропорции */
+        border-radius: 15px; /* Округлённые края */
+        box-shadow: 0 0 60px rgba(55, 255, 0, 0.5);
+        padding: 2px;
+        animation: heartbeat 1.5s infinite;
+      }
+
+      @keyframes heartbeat {
+        0% {
+          transform: scale(1);
+        }
+        25% {
+          transform: scale(1.1);
+        }
+        50% {
+          transform: scale(1);
+        }
+        75% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .heart-animation {
+        font-size: 60px; /* Увеличенный размер сердца */
+        color: red;
+        position: absolute;
+        right: 0; /* Сердечко будет расположено справа */
+        top: 0; /* И сверху */
+        margin: 15px; /* Добавим отступ от углов */
+        animation: spin 2s infinite; /* Анимация вращения */
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+          transform: rotate(180deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <title>Aknur</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -36,7 +126,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
+              <a class="nav-link" aria-current="page" href="Главное.html"
                 >Главная</a
               >
             </li>
@@ -80,26 +170,10 @@
         </div>
       </div>
     </nav>
-    <div class="container text-center my-2">
-      <div class="row">
-        <div class="col-8 mx-auto">
-          <h1 class="display-4">
-          <hr class="my-4" />
-          <p>Здесь есть и скоро будет все что ты любишь,что то полезное, что то
-            прикольное, но разработчик пока рукожоп и здесь мало чего есть</p>
-        </div>
-      </div>
-    </div>
-    </a>
-    <div class="card" style="width: 18rem">
-      <img src="Дизайн без названия.jpg" class="card-img-top" alt="..." />
-      <div class="card-body">
-        <h5 class="card-title">Дорамы</h5>
-        <p class="card-text">
-          Главная развлечение Акнур - это дорамы и здесь собраные лучшиее по ее мнению
-        </p>
-        <a href="Дорамы.html" class="btn btn-primary">Любимые Дорамы</a>
-      </div>
+
+    <div class="image-container">
+      <img src="котпыьуа.jpg" alt="записка" />
+      <div class="heart-animation">❤️</div>
     </div>
   </body>
 </html>
